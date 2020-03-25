@@ -2,6 +2,7 @@ import sys
 import wave
 import nltk
 import pyaudio
+import keyboard
 
 DATA_FOLDER = 'data'
 TEXT_FOLDER = 'text'
@@ -27,13 +28,10 @@ def record_sentence(name, sentence):
 
     print('Recording...')
     record = []
-    keypressed = 0
     while True:
-        keypressed = input("Press Enter to stop!")
         data = streamer.read(FPB)
         record.append(data)
-        print(',')
-        if not keypressed:
+        if keyboard.read_key():
             break
 
     output_file = wave.open(f"{DATA_FOLDER}/{VOICE_FOLDER}/{name}.wav", "wb")
