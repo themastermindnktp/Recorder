@@ -107,6 +107,11 @@ class Recorder:
         self.sentence.config(text=self.sentences[0])
         self.status.config(text="Ready to record")
 
+        try:
+            os.mkdir(f"{DATA_DIR}/{RECORD_DIR}/{self.topic}")
+        except FileExistsError:
+            pass
+
         self.start_lock = False
         self.next_lock = True
 
@@ -143,7 +148,8 @@ class Recorder:
         self.is_recording = False
 
         wave_file = wave.open(
-            f"{DATA_DIR}/{RECORD_DIR}/{self.topic}_{self.current + 1}.wav",
+            f"{DATA_DIR}/{RECORD_DIR}/{self.topic}/" +
+            f"{self.topic}_{self.current + 1}.wav",
             "wb",
         )
 
@@ -196,6 +202,7 @@ class Recorder:
 
 
 topics = [file[:-4] for file in os.listdir(f"{DATA_DIR}/{TEXT_DIR}")]
+topics.sort()
 
 root = tkinter.Tk()
 root.title(TITLE)
