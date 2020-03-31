@@ -1,0 +1,3 @@
+AkaDoc là giải pháp số hóa tài liệu tích hợp trí tuệ nhân tạo, sử dụng hiệu quả khi bóc tách nguồn dữ liệu lớn từ văn bản, hình ảnh... Hệ thống được cải tiến từ ý tưởng từng triển khai cho khách hàng. Theo đó AkaDoc đã được tích hợp thêm công nghệ, có khả năng nhận dạng nhiều loại văn bản, hình ảnh hơn.
+
+Sáng tạo tích hợp công nghệ nhận dạng ký tự quang học (OCR) kỹ thuật hiện đại máy học và xử lý ngôn ngữ tự nhiên (NLP) nhờ đó quy trình bóc tách nội dung trong ảnh chụp hoặc bản scan tài liệu, số hóa đưa vào cơ sở dữ liệu diễn ra tự động, các thông tin dữ liệu được bảo mật.
