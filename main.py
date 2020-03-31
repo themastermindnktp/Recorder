@@ -137,7 +137,7 @@ class Recorder:
         self.start_lock = True
         self.stop_lock = False
         self.next_lock = True
- 
+
         thread = threading.Thread(target=self.record)
         thread.start()
 
@@ -170,7 +170,7 @@ class Recorder:
     def next_sentence(self):
         if self.next_lock:
             return
-          
+
         self.current += 1
 
         if self.current == len(self.sentences):
@@ -192,7 +192,7 @@ class Recorder:
 
         self.sentence.config(text=self.sentences[self.current])
         self.status.config(text="Ready to Record")
-        
+
         self.next_lock = True
 
     def record(self):
