@@ -2,3 +2,5 @@
 
 *.wav
 *.log
+
+.venv

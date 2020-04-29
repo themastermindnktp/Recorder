@@ -1,3 +1,10 @@
-AkaDoc là giải pháp số hóa tài liệu tích hợp trí tuệ nhân tạo, sử dụng hiệu quả khi bóc tách nguồn dữ liệu lớn từ văn bản, hình ảnh... Hệ thống được cải tiến từ ý tưởng từng triển khai cho khách hàng. Theo đó AkaDoc đã được tích hợp thêm công nghệ, có khả năng nhận dạng nhiều loại văn bản, hình ảnh hơn.
+Nintendo bị hack 160.000 tài khoản game online.
+Nintendo xác nhận đã bị lộ thông tin nhiều tài khoản online từ tháng 4 và có thể khiến người chơi mất tiền.
 
-Sáng tạo tích hợp công nghệ nhận dạng ký tự quang học (OCR) kỹ thuật hiện đại máy học và xử lý ngôn ngữ tự nhiên (NLP) nhờ đó quy trình bóc tách nội dung trong ảnh chụp hoặc bản scan tài liệu, số hóa đưa vào cơ sở dữ liệu diễn ra tự động, các thông tin dữ liệu được bảo mật.
+Theo công bố của hãng game Nhật Bản, các thông tin cá nhân như tên, ngày sinh, địa chỉ, thư điện tử của người chơi có thể đã bị hacker phát tán. Tuy thông tin về thẻ tín dụng không bị lộ và đã được mã hóa, người chơi vẫn có nguy cơ mất tiền nếu kẻ xấu lợi dụng để mua sắm các vật phẩm trong game hoặc các món đồ trên gian hàng trực tuyến của hãng.
+
+Nintendo vẫn chưa công bố nguyên nhân tại sao bị hack. Hãng game của Nhật khuyên người dùng nên kiểm tra, hủy các giao dịch bất thường ngay lập tức trong tài khoản Nintendo Switch Online và có thể yêu cầu hoàn tiền. Hãng cũng khuyến cáo người chơi nên bật chế độ bảo mật hai lớp và thay đổi lại mật khẩu đang có của tài khoản online trong thời gian này.
+
+Nintendo là một trong những hãng game lớn nhất thế giới hiện nay với số lượng tài khoản online hàng triệu. Switch, máy chơi game console của hãng, đang có doanh số tăng vọt và cháy hàng ở nhiều nơi trên toàn cầu khi nhu cầu sử dụng tăng vọt khi Covid-19 bùng phát ở nhiều nơi trên thế giới.  
+
+Tại Việt Nam, các dòng máy game của Nintendo phổ biến dù chưa được phân phối chính thức. Trong đó, bán chạy nhất là dòng máy Switch với giá khoảng 8 đến 9 triệu đồng. Đa phần, người chơi Switch đều sử dụng tài khoản online để chơi mạng hoặc mua game bản quyền. Phí thuê bao một năm cho tài khoản Nintendo Online cá nhân là 20 USD, khoảng 470.000 đồng.

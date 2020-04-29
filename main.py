@@ -1,6 +1,5 @@
 import os
 import threading
-
 import tkinter
 import nltk
 import pyaudio
@@ -97,9 +96,6 @@ class Recorder:
         self.topic = self.topic_selection.get()
         text = open(f"{DATA_DIR}/{TEXT_DIR}/{self.topic}.txt", "r").read()
 
-        nltk.download('punkt')
-        nltk.data.load('nltk:tokenizers/punkt/english.pickle')
-
         self.sentences = nltk.sent_tokenize(text)
 
         self.current = 0
@@ -119,6 +115,8 @@ class Recorder:
         if self.start_lock:
             return
 
+        self.start_lock = True
+
         self.audio = pyaudio.PyAudio()
         self.stream = self.audio.open(
             format=FORMAT,
@@ -134,7 +132,6 @@ class Recorder:
         self.status.config(text="Recording")
 
         self.topic_lock = True
-        self.start_lock = True
         self.stop_lock = False
         self.next_lock = True
 
@@ -145,6 +142,8 @@ class Recorder:
         if self.stop_lock:
             return
 
+        self.stop_lock = True
+        
         self.is_recording = False
 
         wave_file = wave.open(
@@ -164,12 +163,13 @@ class Recorder:
 
         self.topic_lock = False
         self.start_lock = False
-        self.stop_lock = True
         self.next_lock = False
 
     def next_sentence(self):
         if self.next_lock:
             return
+
+        self.next_lock = True
 
         self.current += 1
 
@@ -185,15 +185,13 @@ class Recorder:
             )
 
             for i in range(len(self.sentences)):
-                log_file.write(f"{self.sentences[i]}\n")
                 log_file.write(f"{self.topic}_{i+1}.wav\n")
+                log_file.write(f"{self.sentences[i]}\n")
 
             return
 
         self.sentence.config(text=self.sentences[self.current])
         self.status.config(text="Ready to Record")
-
-        self.next_lock = True
 
     def record(self):
         while (self.is_recording):
@@ -203,6 +201,9 @@ class Recorder:
 
 topics = [file[:-4] for file in os.listdir(f"{DATA_DIR}/{TEXT_DIR}")]
 topics.sort()
+
+nltk.download('punkt')
+nltk.data.load('nltk:tokenizers/punkt/english.pickle')
 
 root = tkinter.Tk()
 root.title(TITLE)
